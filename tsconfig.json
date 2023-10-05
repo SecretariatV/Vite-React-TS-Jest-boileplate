@@ -18,7 +18,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Absolute Import */
+    "baseUrl": "./src",
+    "paths": {
+      "@features/*": ["./features/*"]
+    }
   },
   "include": ["src", "./setupTest.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
